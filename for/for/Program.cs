@@ -96,11 +96,30 @@ namespace @for
             Console.WriteLine("girl heights are:" + sumgirl);
             Console.WriteLine("girl average heights is:" + a);
 
+            // find the max hight
+            double max = 0;
+            double min = 99999;
+            
+            for(int h = 0;h < heights[h];h++)
+            {
+                if(heights[h] > 100 && heights[h] < 200)// meaning information
+                {
+                    if (heights[h] > max) // to find the max
+                    {
+                        max = heights[h];
+                    }
+                    if (min > heights[h]) // to find the min 
+                    {
+                        min = heights[h];
+                    }
+                }
+            }
+            Console.WriteLine("the max heigjt is:" + max);
+            Console.WriteLine("the min heigjt is:" + min);
+
+
             // to stop
             Console.ReadKey();
-
-
-
 
         }
    
